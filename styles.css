@@ -27,7 +27,7 @@ body {
     radial-gradient(circle at 8% 8%, rgba(62, 197, 255, 0.14), transparent 34%),
     radial-gradient(circle at 92% 90%, rgba(255, 187, 91, 0.12), transparent 30%),
     linear-gradient(165deg, #050b14 0%, #08101d 44%, #0a172b 100%);
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .noise {
@@ -117,7 +117,7 @@ h2 {
 
 .summary {
   margin: 0.8rem 0;
-  max-width: 70ch;
+  max-width: 66ch;
   color: var(--muted);
 }
 
@@ -226,6 +226,7 @@ h2 {
   text-decoration: none;
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.78rem;
+  white-space: nowrap;
 }
 
 .card-copy {
@@ -431,6 +432,11 @@ h2 {
   .card-copy {
     min-height: 0;
   }
+
+  .cta-row .btn {
+    min-width: 122px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 680px) {
@@ -442,5 +448,56 @@ h2 {
   .card {
     border-radius: 16px;
     padding: 0.95rem;
+  }
+
+  .profile h1 {
+    font-size: clamp(1.58rem, 8vw, 2.15rem);
+  }
+
+  .summary {
+    margin: 0.65rem 0;
+    font-size: 0.94rem;
+  }
+
+  .meta-row {
+    gap: 0.45rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .meta-row span {
+    font-size: 0.7rem;
+    padding: 0.22rem 0.45rem;
+  }
+
+  .cta-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .cta-row .btn {
+    width: 100%;
+    padding: 0.55rem 0.62rem;
+    font-size: 0.86rem;
+  }
+
+  .card-head {
+    align-items: center;
+  }
+
+  .card-head a {
+    font-size: 0.72rem;
+  }
+
+  .metric-list {
+    font-size: 0.8rem;
+    padding-left: 0.95rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .cta-row {
+    grid-template-columns: 1fr;
   }
 }
