@@ -1,3 +1,117 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiran Jojare | Embedded Firmware Portfolio</title>
+    <meta
+      name="description"
+      content="Bento-style portfolio for Kiran Jojare featuring embedded software, firmware projects, open-source contributions, and engineering capabilities."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <main class="layout">
+      <section class="card profile span-4 reveal card-glow-main">
+        <p class="kicker">Firmware Engineer @ Eaton</p>
+        <h1>Kiran Jojare</h1>
+        <p class="summary">
+          Embedded software and firmware engineer focused on deterministic systems,
+          board-level integration, and production-ready reliability.
+        </p>
+        <div class="meta-row">
+          <span>Peachtree City, GA</span>
+          <span>CU Boulder - M.S. Embedded Systems</span>
+          <span>CDAC Pune - PG Diploma, Embedded Systems</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="./assets/Kiran_Jojare_FirmwareEngineer_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a class="btn btn-primary" href="mailto:kiranjojare2605@gmail.com">Email</a>
+          <a class="btn" href="https://github.com/kiranj26" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/kiran-jojare-embedded-system/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+
+      <section class="card metric span-2 reveal card-glow-blue">
+        <p class="label">Engineering Focus</p>
+        <div id="focus-pillars" class="metric-pillars"></div>
+        <details class="metric-more">
+          <summary>Show focus areas</summary>
+          <ul id="focus-details" class="metric-list"></ul>
+        </details>
+      </section>
+
+      <section class="card metric span-2 reveal card-glow-green">
+        <p class="label">Core Stack</p>
+        <div id="core-pillars" class="metric-pillars"></div>
+        <details class="metric-more">
+          <summary>Show stack details</summary>
+          <ul id="core-details" class="metric-list"></ul>
+        </details>
+      </section>
+
+      <section class="card span-2 reveal card-glow-blue">
+        <div class="card-head">
+          <h2>Academic Projects</h2>
+        </div>
+        <p class="card-copy">Course-driven embedded builds with hardware + systems constraints.</p>
+        <div id="academic-list" class="link-list"></div>
+      </section>
+
+      <section class="card span-2 reveal card-glow-amber">
+        <div class="card-head">
+          <h2>Personal Projects</h2>
+          <a href="https://github.com/kiranj26?tab=repositories" target="_blank" rel="noreferrer">See all</a>
+        </div>
+        <p class="card-copy">Microcontroller playgrounds for protocol work, timing, and peripherals.</p>
+        <div id="personal-list" class="link-list"></div>
+      </section>
+
+      <section class="card span-2 reveal card-glow-violet">
+        <div class="card-head">
+          <h2>Open Source Contributions</h2>
+          <a href="https://github.com/kiranj26" target="_blank" rel="noreferrer">GitHub Activity</a>
+        </div>
+        <p class="card-copy">Community contributions across embedded and systems repositories.</p>
+        <div id="oss-list" class="link-list"></div>
+      </section>
+
+      <section class="card span-2 reveal card-glow-green">
+        <h2>Tech Stack</h2>
+        <p class="card-copy">Grouped by domain with quick highlights. Expand each group for full details.</p>
+        <div id="stack-groups" class="stack-groups"></div>
+      </section>
+
+      <section class="card span-2 reveal card-glow-blue">
+        <h2>Now Building</h2>
+        <ul class="clean-list">
+          <li>Robust firmware modules for field reliability</li>
+          <li>Driver abstractions for reusable MCU bring-up</li>
+          <li>Diagnostics and observability pipelines</li>
+        </ul>
+      </section>
+
+      <section class="card span-2 reveal card-glow-amber">
+        <h2>Resume + Contact</h2>
+        <ul class="clean-list">
+          <li><a href="./assets/Kiran_Jojare_FirmwareEngineer_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a></li>
+          <li><a href="mailto:kiranjojare2605@gmail.com">kiranjojare2605@gmail.com</a></li>
+          <li><a href="https://kiranj26.github.io/" target="_blank" rel="noreferrer">kiranj26.github.io</a></li>
+        </ul>
+      </section>
+
+      <footer class="footer span-4 reveal">
+        <p>© <span id="year"></span> Kiran Jojare · Embedded Software & Firmware Engineer</p>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
